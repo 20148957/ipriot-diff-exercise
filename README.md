@@ -18,15 +18,11 @@ Follow these instructions carefully.
 
 ## Diffing
 
-<<<<<<< HEAD
 A diff is a specific file format that tells you the difference between lines in a file and, optionally, words on that line. It contains enough context to make sense to humans and enough information to allow a machine to apply a difference to a set of files such that:
 
 ```math
 B = A \circ \text{Apply}(\text{Diff}(A, B))
 ```
-=======
-A diff is a specific file format that tells you the difference between lines in a file and optionally words on that line. It contains enough context to make sense to humans and enough information to allow a machine to apply a difference to a set of files such that:
->>>>>>> answers
 
 That is, the difference between A and B can allow A to be transformed into B and vice versa using a function that **applies** said difference.
 
@@ -114,11 +110,7 @@ git diff --word-diff
 >
 > Make sure you attempted to fill in your explanation above!
 
-<<<<<<< HEAD
 Guess what!? Your lecturer has also got an answer to these questions! They are in another branch, though. 
-=======
-Guess what!? Your lecturer has also got an answer to these questions! They are in another branch though!
->>>>>>> answers
 
 Let's go check them out to decide whether we like them better. Run the following git command:
 
@@ -126,21 +118,12 @@ Let's go check them out to decide whether we like them better. Run the following
 git switch answers
 ```
 
-<<<<<<< HEAD
 Did it work? If it did, it just means you didn't follow the instructions carefully! 
-=======
-Did it work? If it did it just means you didn't follow the instructions carefully!
->>>>>>> answers
 
 If it doesn't work, you have yourself in a quandary:
 
-<<<<<<< HEAD
 - Do you commit your changes even though you might not use them?
 - Do you discard your changes, even though your lecturer could be tricking you and there is no solution in the `answers` branch?
-=======
-- Do you commit the changes you made even though you might not end up using them?
-- Do you discard your changes, even though your lecturer could be tricking you and there is absolutely no solution in the `answers` branch?
->>>>>>> answers
 - Do you live forever in FOMO (Fear Of Missing Out)?
 
 I bet you didn't expect an existential crisis learning git (well, you should!).
@@ -167,9 +150,4 @@ Okay, stash them again, and then switch to the `answers` branch.
 
 Go ahead. Look at the answers. Notice that some are probably better than yours, and some are worse. You want to merge your stashed changes with the current changes. You can do this in this branch (simply pop the stash here), or you can merge the answers into main and then pop your stash. Either way, this time, popping the stash will be a bit more complicated because there are changes in the same file that you have made and that your lecturer has made.
 
-<<<<<<< HEAD
 So you will have a conflict like any other merge conflict. But by now, you are a pro at this! So go ahead, pop the stash and resolve the conflict.
-
-=======
-So you will have a conflict like any other merge conflict. But by now you are a pro at this! So go ahead, pop the stash and resolve the conflict.
->>>>>>> answers
